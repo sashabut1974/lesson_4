@@ -1,0 +1,114 @@
+/* ПРІОРІТЕТ СЕЛЕКТОРІВ */
+
+/* Основні правила формування пріорітетів:
+1) У випадку рівнозначних селекторів більший пріорітет буде у останнього по коду.
+2) Більший пріорітет завжди буде у селектора,який звужує (уточнює, конкретизує) пошук (запит)
+ 3) Пріорітет у рядкових (inline) стилів -атрибут style вищий,ніж у стилів з окремого файлу,нпр.:style.css
+ 4) Флаг !important перезаписує пріорітет (не рекомендується)*/
+/* #ipsum{
+    color: brown;
+}
+.text.block.lesson{
+    color: bisque;
+}
+.text.block p{
+    color: green;
+    
+}
+p.text{
+    color: blueviolet !important;
+}
+.text{
+    color: red;
+}   
+
+p{
+    color: red;
+} */
+/* ОБНУЛЕННЯ СТИЛІВ ТЕГІВ */
+
+/* CSS властивість шрифтів */
+
+/* CSS-ВЛАСТИВОСТІ ТЕКСТУ */
+/* @font-face{
+    font-family: "CircularStd";
+    src: url("../fonts/CircularStd-Black.woff2")format("woff2"),
+         url("../fonts/CircularStd-Black.woff")format("woff");
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face{
+    font-family: "CircularStd";
+    src: url("../fonts/CircularStd-Book.woff2")format("woff2"),
+         url("../fonts/CircularStd-Book.woff")format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;  
+}
+@font-face {
+    font-family:"CircularStd" ;
+    src: url("../fonts/CircularStd-Bold.woff2")format("woff2"),
+         url("../fonts/CircularStd-Bold.woff")format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CircularStd";
+    src: url("../fonts/CircularStd-Medium.woff2")format("woff2"),
+         url("../fonts/CircularStd-Medium.woff")format("woff");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal; */
+
+
+
+@font-face {
+    font-family:"Larsseit" ;
+    src: url("../fonts/Larsseit-Regular.woff2")format(woff2),
+         url("../fonts/Larsseit-Regular.woff")format(woff);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Lasco" ;
+    src: url("../fonts/Lasco.woff2")format(woff2),
+         url("../fonts/Lasco.woff")format(woff);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:"Latin" ;
+    src: url("../fonts/Latin.woff2")format(woff2),
+         url("../fonts/Latin.woff")format(woff);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family:"Latino" ;
+    src: url("../fonts/a_LatinoSh.woff2")format(woff2),
+         url("../fonts/a_LatinoSh.woff")format(woff);
+         font-display: swap;
+         font-weight: 400;
+         font-style: normal;     
+}
+ .start p,.text p,.text~p,.add{
+    font-family: "Larsseit";
+    font-weight: 400; 
+}
+.text,a{
+    font-family: "Latino";
+    font-weight: 400;   
+}
+h1,h2,ol,ul.list
+{
+    font-family: "Latin";
+    font-weight: 400;  
+}
+a{
+    color: midnightblue;
+}
